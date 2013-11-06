@@ -1,8 +1,8 @@
 {
 	"manifest_version":2,	//chrome18以后需要加入
 	"name":"够下载--测试",
-	"version":"0.0.1",
-	"description":"自动执行够下载",
+	"version":"0.0.2",
+	"description":"更加智能的适配",
 	//"icons":{"icon.png"},//icons这里需要三种不同分辨率的图片，一般是16*16 48*48 128*128
 	//"default_locale":"zh_CN",//支持国际化
 	"browser_action":{
