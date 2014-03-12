@@ -47,7 +47,7 @@
 	
 	var aList = document.getElementsByTagName("a");
 	for(var i = 0;i<aList.length;i++){ 
-		if(aList[i].href.indexOf("xiazai.html")>=0)
+		if(aList[i].href.indexOf("xiazai.html")>=0 || aList[i].href.indexOf("xiazai2.html")>=0)
 		{
 			var href = GetDownUrl(aList[i].href);
 			if(href == "") aList[i].style.display="none";
