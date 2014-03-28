@@ -1,14 +1,16 @@
 {
 	"manifest_version":2,	//chrome18以后需要加入
-	"name":"够下载--测试",
-	"version":"0.0.2",
-	"description":"更加智能的适配",
+	"name":"够下载",
+	"version":"0.0.9",
+	"description":"站长，不要怪我啊...",
 	//"icons":{"icon.png"},//icons这里需要三种不同分辨率的图片，一般是16*16 48*48 128*128
 	//"default_locale":"zh_CN",//支持国际化
+	/*
 	"browser_action":{
 		"default_icon":"icon.png",//chrome18以后必须加入default_*
 		"default_popup":"popup.html"
 	},
+	*/
 	//"page_action":{},
 	//"theme":{},
 	//"app":{},
@@ -17,13 +19,13 @@
 		"scripts": ["js/background.js"]
 	},
 	//"chrome_url_overrides":{},//更换页
-	"homepage_url":"http://www.ltaotao.net",
+	"homepage_url":"http://www.baidu.com",
 	//"incognito":"incognito",
 	//"key":"publicKey",
 	"minimum_chrome_version":"18",
 	//"omnibox":{"keyword":"aString"},
 	//"options_page":"",//选项的配置页
-	"permissions":["tabs","http://goxiazai.cc/html*"],//需要使用权限
+	"permissions":["tabs","http://goxiazai.cc/html*","contextMenus"],//需要使用权限
 	 "content_scripts": [
 	    {
 	      "matches": ["http://goxiazai.cc/html*"],

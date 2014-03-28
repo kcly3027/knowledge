@@ -15,3 +15,12 @@ chrome.extension.onRequest.addListener(
 			sendResponse({}); 
 	}
 );
+/*Google翻译*/
+var newTranslateTabMenu = chrome.contextMenus.create(
+    {"title": '使用 Google Translate 翻译',
+     "contexts": ["selection"], "onclick": openInTranslate});
+ 
+function openInTranslate(info, tab){
+  var viewer_url = 'https://translate.google.com/?hl=zh#auto/zh-CN/' + encodeURIComponent(info.selectionText);
+  chrome.tabs.create({"url": viewer_url});
+}
